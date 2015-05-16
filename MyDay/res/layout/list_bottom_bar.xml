@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomBar"
+    style="@style/bottom_bar_bg" >
+
+    <ImageButton
+        android:id="@+id/search_btn"
+        style="@style/bottom_bar_item"
+        android:contentDescription="@string/desc"
+        android:onClick="onSearchClick"
+        android:src="@drawable/search" />
+
+    <ImageButton
+        android:visibility="gone"
+        android:id="@+id/group_by_btn"
+        style="@style/bottom_bar_item"
+        android:contentDescription="@string/desc"
+        android:onClick="onGroupByClick"
+        android:src="@drawable/group_by" />
+
+    <ImageView
+        android:id="@+id/add_sechedule"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/desc"
+        android:scaleType="fitXY"
+        android:src="@drawable/add_sechedule" />
+
+    <ImageButton
+        android:visibility="gone"
+        android:id="@+id/tag_filter_btn"
+        style="@style/bottom_bar_item"
+        android:contentDescription="@string/desc"
+        android:onClick="onTagFilterClick"
+        android:src="@drawable/tag_filter" />
+
+    <LinearLayout
+        android:id="@+id/sync_btn_wrap"
+        style="@style/bottom_bar_item"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/sync_btn"
+            style="@style/wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/desc"
+            android:scaleType="centerInside"
+            android:src="@drawable/sync" />
+    </LinearLayout>
+
+</LinearLayout>

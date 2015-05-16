@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyDay</string>
+    <string name="action_settings">Settings</string>
+    <string name="undo_list">待办事项</string>
+    <string name="welcome_name_password_invalid">The email or password is incorrect.</string>
+    <string name="welcome_Username_hint">请输入用户名</string>
+    <string name="welcome_password_hint">请输入密码</string>
+    <string name="welcome_login_google">Sign in with Gmail</string>
+    <string name="welcome_login">登录</string>
+    <string name="welcome_not_have_account_msg">Dont have an account? </string>
+    <string name="welcome_sign_up">Sign up</string>
+    <string name="welcome_forget_password">Forget password</string>
+    <string name="desc">Description</string>
+    <string name="back">返回</string>
+    <string name="confirm">保存</string>
+    <string name="cancel">取消</string>
+    <string name="title">标题</string>
+    <string name="notes">内容</string>
+    <string name="editschedule">编辑任务</string>
+    
+    
+    <string name="type">任务类型</string>
+    <string name="task_date">日期</string>
+    <string name="task_time">时间</string>
+    <string name="task_reminder">提醒</string>
+
+</resources>

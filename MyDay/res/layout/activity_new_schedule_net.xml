@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myday="http://schemas.android.com/apk/res/com.hallie.myday"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/all_bg"
+    android:orientation="vertical" >
+
+    <com.hallie.myday.ui.TopBarView
+        android:id="@+id/top_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        myday:top_button_left_src="@drawable/back_btn"
+        myday:top_button_left_text="@string/cancel"
+        myday:top_button_right_src="@drawable/operate_btn_bg"
+        myday:top_button_right_text="@string/confirm"
+        myday:top_title="@string/editschedule" >
+    </com.hallie.myday.ui.TopBarView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp" >
+
+        <LinearLayout
+            style="@style/wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                style="@style/add_linearlayout"
+                android:layout_marginTop="3dp" >
+
+                <EditText
+                    android:id="@+id/task_title"
+                    style="@style/editview_item"
+                    android:hint="@string/title" />
+
+                <include layout="@layout/divider_line" />
+
+                <EditText
+                    android:id="@+id/task_notes"
+                    style="@style/editview_item"
+                    android:hint="@string/notes" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/add_linearlayout" >
+
+                <include
+                    android:id="@+id/taks_type"
+                    layout="@layout/item_view" />
+
+                <include layout="@layout/divider_line" />
+
+                <include
+                    android:id="@+id/taks_date"
+                    layout="@layout/item_view" />
+
+                <include layout="@layout/divider_line" />
+
+                <include
+                    android:id="@+id/taks_time"
+                    layout="@layout/item_view" />
+
+                <include layout="@layout/divider_line" />
+
+                <include
+                    android:id="@+id/taks_reminder"
+                    layout="@layout/item_view" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

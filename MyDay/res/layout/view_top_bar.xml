@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/top_bar" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/menu_left"
+            style="@style/top_bar_left_btn"
+            android:contentDescription="@string/desc"
+            android:src="@drawable/btn_top_menu_btn"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/left_btn"
+            style="@style/top_bar_back_btn"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tile"
+        style="@style/top_bar_text" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/move_btn"
+            style="@style/top_bar_right_btn"
+            android:background="@drawable/btn_top_moveto"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/right_btn"
+            style="@style/top_bar_right_btn"
+            android:background="@drawable/operate_btn_bg"
+            android:text="@string/confirm"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

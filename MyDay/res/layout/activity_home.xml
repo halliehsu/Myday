@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title"
+        android:gravity="center"
+        android:text="日程管理专家"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/ib_newone"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:src="@drawable/newone" />
+
+        <ImageButton
+            android:id="@+id/ib_delete"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:src="@drawable/delete" />
+
+        <ImageButton
+            android:id="@+id/ib_check"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:src="@drawable/check" />
+
+        <ImageButton
+            android:id="@+id/ib_edit"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:src="@drawable/edit" />
+
+        <ImageButton
+            android:id="@+id/ib_deleteall"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:src="@drawable/deleteall" />
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:src="@drawable/search" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:text="已有日程"
+        android:textColor="@color/grey"
+        android:textSize="17sp" />
+
+    <ListView
+        android:id="@+id/lv_mainSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:background="@color/darker"
+        android:cacheColorHint="@color/grey"
+        android:choiceMode="singleChoice"
+        android:longClickable="true" >
+    </ListView>
+
+</LinearLayout>

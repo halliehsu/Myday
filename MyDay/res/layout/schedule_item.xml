@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/complete_btn"
+        style="@style/btn_complete"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/desc" />
+     <LinearLayout
+        android:id="@+id/item_content_wrap"
+        style="@style/item_content_wrap"
+        android:layout_width="fill_parent"
+        android:layout_toRightOf="@id/complete_btn"
+        android:background="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:longClickable="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/title_wrap"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="3.0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/schedule_title"
+                style="@style/list_item_title"
+                android:layout_width="0.0dip"
+                android:layout_weight="1.0"
+                android:drawablePadding="@dimen/normal_space"
+                android:paddingRight="@dimen/normal_space" />
+
+           <!--  <LinearLayout
+                android:id="@+id/project_count_wrap"
+                style="@style/wrap_content_with_padding_lr"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/project_list_count_bg" >
+
+                <TextView
+                    android:id="@id/overdue_count"
+                    style="@style/project_count"
+                    android:textColor="#ff7b8188" />
+            </LinearLayout> -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_row"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="2.0"
+            android:gravity="top" >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:gravity="top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/schedule_startat"
+                    style="@style/list_item_small_text" />
+
+                <TextView
+                    android:id="@+id/schedule_context"
+                    style="@style/list_item_small_text"
+                    android:layout_width="0.0dip"
+                    android:layout_weight="1.0" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/project_endat"
+                style="@style/list_item_small_text"
+                android:layout_marginRight="0.0dip"
+                android:gravity="right" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

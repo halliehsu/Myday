@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#303030</color>
+    <color name="main">#ffffcc</color>
+    <color name="darker">#ffd580</color>
+    <color name="orange">#a20000</color>
+    <color name="passedschbg">#818175</color> <!-- 过期日程背景 -->
+    <color name="passedschtext">#292929</color> <!-- 过期日程颜色 -->
+    <color name="selectedsch">#ffc4c4</color><!-- 选中日程背景的颜色 -->
+    
+    
+    <color name="white_normal">#ffffffff</color>
+    <color name="gray_normal">#ffaaaaaa</color>
+    <color name="green_normal">#ff1a9599</color>
+    <color name="divider_line">#ffd7dadc</color>
+    
+    <color name="item_clicked">#1033c1fd</color>
+    <color name="border_line">#ffd7dadc</color>
+    <color name="hint">#ffd7dadc</color>
+
+</resources>

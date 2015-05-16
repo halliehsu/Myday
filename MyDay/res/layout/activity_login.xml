@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/all_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30.0dip" >
+
+    <ImageView
+        android:layout_width="250.0dip"
+        android:layout_height="24.0dip"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/login_welcome_slogan" />
+
+    <LinearLayout
+        android:id="@+id/login_error_layout"
+        android:layout_width="250.0dip"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/log_in_warning_icon" />
+
+        <TextView
+            android:id="@+id/login_error_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_name_password_invalid"
+            android:textColor="#ffe56161" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250.0dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_content_bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:background="@null"
+            android:hint="@string/welcome_Username_hint"
+            android:inputType="textEmailAddress" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_divider" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10.0dip"
+            android:background="@null"
+            android:hint="@string/welcome_password_hint"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_submit"
+        android:layout_width="250.0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/selector_login_btn_bg"
+        android:gravity="center"
+        android:padding="10.0dip"
+        android:text="@string/welcome_login"
+        android:textColor="@color/white_normal"
+        android:textSize="20.0dip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_not_have_account_msg"
+            android:textColor="@color/gray_normal" />
+
+        <TextView
+            android:id="@+id/login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/welcome_sign_up"
+            android:textColor="@drawable/selector_welcome_clickable_text_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/login_forget_password_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/log_in_forget_password_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_forget_password"
+            android:textColor="@color/gray_normal" />
+    </LinearLayout>
+
+</LinearLayout>
